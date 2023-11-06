@@ -4,6 +4,7 @@ on:
     pull_request:
         branches:
             - main
+    workflow_dispatch:
 
 jobs:
     test:
@@ -35,6 +36,6 @@ jobs:
 
             - name: Test App Code
               run: python ./main_test.py
-              
+
 
             
